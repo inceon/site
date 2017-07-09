@@ -1,0 +1,138 @@
+/*Reset default styles*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/*Start my styles*/
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7em;
+  overflow-x: hidden; }
+
+header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  margin: 1em 1.5em;
+  text-align: center;
+  word-spacing: 2em; }
+
+header a {
+  color: #AE541E;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #AE541E; }
+
+header a:hover {
+  color: #941C17;
+  border-bottom: 1px solid #941C17; }
+
+#banner {
+  position: relative; }
+  #banner .text {
+    padding: 13% 0;
+    background-image: url("https://wallpaperfx.com/uploads/wallpapers/2016/03/09/18475/preview_minimal-mountains-tops.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-top: 3px solid #ffc8b4; }
+    #banner .text h1 {
+      font-size: 3em;
+      font-weight: 100;
+      color: #fff;
+      line-height: 1em;
+      margin: 0 0 0.5em 0;
+      padding: 0; }
+    #banner .text p {
+      font-size: 1.5em;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 1.75em; }
+  #banner .avatar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+    #banner .avatar img {
+      width: 180px;
+      background: white;
+      padding: 5px;
+      border-radius: 50%; }
+
+#banner2 {
+  padding: 20% 0;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/da/b2/d2/dab2d2addd8e79e23bc090122a1c0df5.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center; }
+
+.wrapper {
+  padding: 9em 6em; }
+  .wrapper > .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgray; }
+  .wrapper p {
+    text-align: justify;
+    text-indent: 1.5em; }
+  .wrapper:nth-child(odd) {
+    color: #4A525C;
+    background: #FFFFFF; }
+  .wrapper:nth-child(even) {
+    color: #212C3A;
+    background: #8cc9f0; }
+  .wrapper .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3em; }
+    .wrapper .skills .block {
+      justify-self: center; }
+      .wrapper .skills .block li {
+        font-size: 0.9em;
+        list-style-type: circle;
+        margin-left: 1.1em;
+        color: #464F5C; }
