@@ -58,19 +58,20 @@ header {
   word-spacing: 2em; }
 
 header a {
-  color: #AE541E;
+  color: #BEE1D8;
   padding-bottom: 2px;
-  border-bottom: 1px solid #AE541E; }
+  font-weight: 500;
+  border-bottom: 1px solid #1E84AE; }
 
 header a:hover {
-  color: #941C17;
-  border-bottom: 1px solid #941C17; }
+  color: #D4E1DE;
+  border-bottom: 1px solid #29B6F0; }
 
 #banner {
   position: relative; }
   #banner .text {
     padding: 13% 0;
-    background-image: url("https://wallpaperfx.com/uploads/wallpapers/2016/03/09/18475/preview_minimal-mountains-tops.jpg");
+    background-image: url("/assets/images/apple-971148_1280_blur.jpg");
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -98,17 +99,8 @@ header a:hover {
       padding: 5px;
       border-radius: 50%; }
 
-#banner2 {
-  padding: 20% 0;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/da/b2/d2/dab2d2addd8e79e23bc090122a1c0df5.jpg");
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  text-align: center; }
-
 .wrapper {
-  padding: 9em 6em; }
+  padding: 9em 5em; }
   .wrapper > .title {
     text-align: center;
     text-transform: uppercase;
@@ -119,20 +111,48 @@ header a:hover {
   .wrapper p {
     text-align: justify;
     text-indent: 1.5em; }
+  .wrapper blockquote {
+    text-align: center;
+    font-style: italic; }
   .wrapper:nth-child(odd) {
     color: #4A525C;
     background: #FFFFFF; }
   .wrapper:nth-child(even) {
     color: #212C3A;
-    background: #8cc9f0; }
+    background: #8cc9f0;
+    padding: 20% 0;
+    background-image: url("/assets/images/earphones-791309_1280_blur.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
   .wrapper .skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 3em; }
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    @media (min-width: 34rem) {
+      .wrapper .skills {
+        grid-template-columns: repeat(3, 1fr); } }
     .wrapper .skills .block {
+      min-width: auto;
+      background-color: rgba(245, 255, 255, 0.85);
+      border-radius: 10px;
+      padding: 1.3em;
       justify-self: center; }
       .wrapper .skills .block li {
         font-size: 0.9em;
         list-style-type: circle;
-        margin-left: 1.1em;
+        margin-left: 23px;
         color: #464F5C; }
+  .wrapper .projects {
+    padding: 1.5em 0;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(26vh, 190px); }
+    .wrapper .projects .project {
+      justify-self: center; }
+      .wrapper .projects .project img {
+        width: 100%;
+        border-radius: 5px; }
