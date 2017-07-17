@@ -108,51 +108,157 @@ header a:hover {
     margin-bottom: 1em;
     font-size: 1.1em;
     border-bottom: 1px solid lightgray; }
-  .wrapper p {
-    text-align: justify;
-    text-indent: 1.5em; }
-  .wrapper blockquote {
-    text-align: center;
-    font-style: italic; }
-  .wrapper:nth-child(odd) {
+  .wrapper:nth-child(even) {
     color: #4A525C;
     background: #FFFFFF; }
-  .wrapper:nth-child(even) {
-    color: #212C3A;
-    background: #8cc9f0;
-    padding: 20% 0;
-    background-image: url("/assets/images/earphones-791309_1280_blur.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat; }
-  .wrapper .skills {
+
+#about {
+  padding: 9em 5em;
+  color: #4A525C;
+  background: #FFFFFF; }
+  #about .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgray; }
+  #about p {
+    text-align: justify;
+    text-indent: 1.5em; }
+
+#skills {
+  color: #212C3A;
+  background: #8cc9f0;
+  padding: 7em 0;
+  background-image: url("/assets/images/earphones-791309_1280_blur.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  #skills > .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgray; }
+  #skills .blocks {
     display: grid;
-    grid-gap: 20px;
+    grid-row-gap: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto; }
+    grid-template-rows: repeat(3, 500px); }
     @media (min-width: 34rem) {
-      .wrapper .skills {
-        grid-template-columns: repeat(3, 1fr); } }
-    .wrapper .skills .block {
-      min-width: auto;
+      #skills .blocks {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto; } }
+    #skills .blocks .block {
+      min-width: 70%;
       background-color: rgba(245, 255, 255, 0.85);
       border-radius: 10px;
       padding: 1.3em;
       justify-self: center; }
-      .wrapper .skills .block li {
+      #skills .blocks .block li {
         font-size: 0.9em;
         list-style-type: circle;
         margin-left: 23px;
+        line-height: 29px;
         color: #464F5C; }
-  .wrapper .projects {
+
+#projects {
+  color: #4A525C;
+  background: #FFFFFF;
+  padding: 5em; }
+  #projects .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgray; }
+  #projects blockquote {
+    text-align: center; }
+  #projects .blocks {
     padding: 1.5em 0;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(26vh, 190px); }
-    .wrapper .projects .project {
-      justify-self: center; }
-      .wrapper .projects .project img {
-        width: 100%;
-        border-radius: 5px; }
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(26vh, auto); }
+    #projects .blocks .project {
+      justify-self: center;
+      border: 1px solid #eee;
+      background-color: rgba(245, 255, 255, 0.85);
+      padding: 0.5em;
+      border-radius: 5px; }
+      #projects .blocks .project p {
+        line-height: 1.5em;
+        text-indent: 1.5em;
+        text-align: justify; }
+      #projects .blocks .project .screen {
+        position: relative;
+        height: 250px; }
+        #projects .blocks .project .screen img {
+          width: 70%;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: inherit; }
+
+#social {
+  color: #4A525C;
+  background: #C5DBE9;
+  padding: 6em 0; }
+  #social > .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgray; }
+  #social ul {
+    text-align: center; }
+    #social ul li {
+      display: inline-block;
+      width: 5em;
+      height: 5em;
+      margin: 1em;
+      border-radius: 50%;
+      border: 1px solid gray;
+      position: relative; }
+      #social ul li a {
+        margin: 0;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: gray; }
+      #social ul li.github:hover {
+        border-color: black; }
+        #social ul li.github:hover a {
+          color: black; }
+      #social ul li.stackoverflow:hover {
+        border-color: #B29C8B; }
+        #social ul li.stackoverflow:hover a {
+          color: #F48024; }
+      #social ul li.fb:hover {
+        border-color: #3b5998; }
+        #social ul li.fb:hover a {
+          color: #3b5998; }
+      #social ul li.twitter:hover {
+        border-color: #1da1f2; }
+        #social ul li.twitter:hover a {
+          color: #1da1f2; }
+      #social ul li.vk:hover {
+        border-color: #507299; }
+        #social ul li.vk:hover a {
+          color: #507299; }
+  #social .email {
+    padding: 1em;
+    text-align: center; }
+    #social .email a {
+      color: #4A525C; }
+      #social .email a:hover {
+        color: #3B2666; }
